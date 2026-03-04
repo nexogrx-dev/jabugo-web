@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Cultura del Ibérico | Jabugo Bodega",
+    "description": "Guía breve sobre raza ibérica, montanera, curación y corte a cuchillo para comprender el valor del producto."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibéricos 100% · Cinco Jotas",
+    "location": "Calle Sócrates 13 · Granada",
+    "ctas": [
+      { "label": "Reservar mesa", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Llamar", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Cómo llegar", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "raza-y-montanera",
+      "title": "Raza ibérica y montanera",
+      "paragraphs": [
+        "El jamón de bellota 100% ibérico procede de animales de pureza racial completa.",
+        "La montanera, con alimentación en bellota y libertad en dehesa, define su perfil aromático y graso."
+      ],
+      "quote": {
+        "text": "Para entender el sabor hay que entender el origen.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "dehesa-montanera.webp",
+        "alt": "Entorno de dehesa en periodo de montanera"
+      },
+      "cta": {
+        "label": "Reservar mesa",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "curacion-y-corte",
+      "title": "Curación y corte a cuchillo",
+      "paragraphs": [
+        "La curación en bodegas naturales se prolonga en piezas premium entre 36 y 48 meses.",
+        "El corte a cuchillo en lonchas finas favorece la expresión aromática frente al corte mecánico."
+      ],
+      "quote": {
+        "text": "El corte forma parte del producto, no solo del servicio.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "curacion-bodega.webp",
+        "alt": "Piezas en proceso de curación en bodega natural"
+      },
+      "cta": {
+        "label": "Cómo llegar",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

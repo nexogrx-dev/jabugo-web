@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Jabugo Bodega | Ibéricos en Granada",
+    "description": "Bodega especializada en ibéricos en Calle Sócrates 13, Granada. Propuesta de producto y hospitalidad en formato mobile-first."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibéricos 100% · Cinco Jotas",
+    "location": "Calle Sócrates 13 · Granada",
+    "ctas": [
+      { "label": "Reservar mesa", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Llamar", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Cómo llegar", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "propuesta",
+      "title": "Una bodega de especialización ibérica",
+      "paragraphs": [
+        "Jabugo Bodega se posiciona en Granada como un espacio centrado en producto ibérico de alta gama.",
+        "Su escala es íntima y el servicio prioriza una experiencia cuidada frente al formato masivo."
+      ],
+      "quote": {
+        "text": "Aquí el conocimiento del producto es tan importante como el producto.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "hero-jamon.webp",
+        "alt": "Ración de jamón ibérico en primer plano"
+      },
+      "cta": {
+        "label": "Reservar mesa",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "producto",
+      "title": "Cinco Jotas y corte a cuchillo",
+      "paragraphs": [
+        "El eje de la propuesta es el jamón de bellota 100% ibérico Cinco Jotas.",
+        "El corte a cuchillo en lonchas finas forma parte esencial de la experiencia en sala."
+      ],
+      "quote": {
+        "text": "Cada detalle del servicio debe respetar el producto.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "corte-cuchillo.webp",
+        "alt": "Servicio de jamón ibérico cortado a cuchillo"
+      },
+      "cta": {
+        "label": "Ver cultura del ibérico",
+        "href": "/cultura-del-iberico"
+      }
+    }
+  ]
+}

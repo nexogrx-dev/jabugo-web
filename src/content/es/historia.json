@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Historia | Jabugo Bodega",
+    "description": "Origen y filosofía de Jabugo Bodega: hospitalidad tradicional, escala humana y trato personal en Granada."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibéricos 100% · Cinco Jotas",
+    "location": "Calle Sócrates 13 · Granada",
+    "ctas": [
+      { "label": "Reservar mesa", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Llamar", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Cómo llegar", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "filosofia",
+      "title": "Filosofía de abacería",
+      "paragraphs": [
+        "La casa se apoya en una lógica tradicional: producto, criterio y atención directa.",
+        "La narrativa digital debe sentirse cercana, como una invitación personal y no corporativa."
+      ],
+      "quote": {
+        "text": "La relación con cada mesa es parte de la experiencia.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "bodega-interior.webp",
+        "alt": "Interior de bodega con ambiente acogedor"
+      },
+      "cta": {
+        "label": "Reservar mesa",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "anfitrion",
+      "title": "El papel del anfitrión",
+      "paragraphs": [
+        "Nicolás es una figura central en la identidad del negocio y en la confianza del cliente.",
+        "El trato personalizado se reconoce como uno de los pilares del proyecto."
+      ],
+      "quote": {
+        "text": "La hospitalidad empieza antes de sentarse a la mesa.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "nicolas-sala.webp",
+        "alt": "Nicolás en el espacio de sala"
+      },
+      "cta": {
+        "label": "Cómo llegar",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

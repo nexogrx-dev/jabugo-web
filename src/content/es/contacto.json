@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Contacto | Jabugo Bodega",
+    "description": "Ubicación de Jabugo Bodega en Granada y accesos rápidos para reservar, llamar y llegar desde móvil."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibéricos 100% · Cinco Jotas",
+    "location": "Calle Sócrates 13 · Granada",
+    "ctas": [
+      { "label": "Reservar mesa", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Llamar", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Cómo llegar", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "ubicacion",
+      "title": "Dónde estamos",
+      "paragraphs": [
+        "Jabugo Bodega está en Calle Sócrates 13, en el Barrio de Ronda de Granada.",
+        "La página de contacto debe resolver de forma inmediata cómo llegar y cómo reservar."
+      ],
+      "quote": {
+        "text": "La experiencia empieza cuando el cliente encuentra el lugar sin fricción.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "fachada-socrates.webp",
+        "alt": "Fachada de Jabugo Bodega en Calle Sócrates"
+      },
+      "cta": {
+        "label": "Cómo llegar",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "gestion-local",
+      "title": "Información sincronizada",
+      "paragraphs": [
+        "Los datos del sitio deben estar alineados con Google Business Profile para mejorar visibilidad local.",
+        "Las acciones clave en móvil son reservar, llamar y abrir mapa con un solo toque."
+      ],
+      "quote": {
+        "text": "Menos pasos, mejor servicio.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "acceso-barrio-ronda.webp",
+        "alt": "Entorno de acceso en Barrio de Ronda"
+      },
+      "cta": {
+        "label": "Reservar mesa",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    }
+  ]
+}
