@@ -9,7 +9,7 @@ export const esContent = {
     { href: '/', label: 'Inicio' },
     { href: '/carta/', label: 'Carta' },
     { href: '/historia/', label: 'Historia' },
-    { href: '/cultura-del-iberico/', label: 'Cultura del iberico' },
+    { href: '/cultura-iberico/', label: 'Cultura del iberico' },
     { href: '/contacto/', label: 'Contacto' },
     { href: '/legal/', label: 'Legal' },
   ],

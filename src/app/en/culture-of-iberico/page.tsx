@@ -13,7 +13,7 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function CultureEnPage() {
   return (
-    <PageFrame navItems={enContent.nav} langToggle={{ href: '/cultura-del-iberico/', label: 'ES' }}>
+    <PageFrame navItems={enContent.nav} langToggle={{ href: '/cultura-iberico/', label: 'ES' }}>
       <Section title={enContent.cultura.title}>
         <TextBlock title="Editorial content" body={enContent.cultura.body} />
       </Section>
