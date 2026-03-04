@@ -7,14 +7,16 @@ type CTA = {
 };
 
 type HeroProps = {
+  eyebrow?: string;
   title: string;
   subtitle: string;
   location?: string;
+  quote?: string;
   cta?: CTA;
   ctas?: readonly CTA[];
 };
 
-export function Hero({ title, subtitle, location, cta, ctas }: HeroProps) {
+export function Hero({ eyebrow, title, subtitle, location, quote, cta, ctas }: HeroProps) {
   // Normalise to array; cap at 3 for the 2-primary + 1-text-link pattern
   const buttons = ctas ?? (cta ? [cta] : []);
   const [primary, secondary, textLink] = buttons;
@@ -23,7 +25,7 @@ export function Hero({ title, subtitle, location, cta, ctas }: HeroProps) {
     <section className="bg-grain-gradient min-h-[70vh] flex flex-col justify-between">
       {/* Top stamp bar */}
       <div className="mx-auto w-full max-w-[375px] px-4 pt-12">
-        <p className="stamp-label">Bodega · Granada</p>
+        <p className="stamp-label">{eyebrow ?? 'Bodega · Granada'}</p>
       </div>
 
       {/* Main type stack */}
@@ -34,6 +36,9 @@ export function Hero({ title, subtitle, location, cta, ctas }: HeroProps) {
         <p className="mt-3 text-base font-semibold text-brand-700 tracking-wide">{subtitle}</p>
         {location && (
           <p className="mt-1 text-[13px] text-brand-500 tracking-[0.08em]">{location}</p>
+        )}
+        {quote && (
+          <p className="mt-3 text-sm italic text-brand-700">&ldquo;{quote}&rdquo;</p>
         )}
 
         {/* CTAs — 2 buttons + 1 text link */}

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { CTAButton } from '@/components/CTAButton';
 import { Hero } from '@/components/Hero';
 import { PageFrame } from '@/components/PageFrame';
+import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
 import { esContent } from '@/content/es/site';
 import homeContent from '@/src/content/es/home.json';
@@ -15,12 +17,6 @@ export const metadata: Metadata = buildPageMetadata({
   description: homeContent.meta.description,
   url: '/',
 });
-
-const Divider = () => (
-  <div className="bodega-divider" aria-hidden="true">
-    <span className="text-[10px] text-brand-500 leading-none select-none">◆</span>
-  </div>
-);
 
 const mobileNavItems = [
   { href: '/', label: 'Inicio' },
@@ -37,8 +33,10 @@ const heroCtas = [
 ] as const;
 
 export default function HomePage() {
-  const bodega = homeContent.sections[0];
-  const productoSection = homeContent.sections[1];
+  const propuesta = homeContent.sections.find((section) => section.id === 'propuesta');
+  const producto = homeContent.sections.find((section) => section.id === 'producto');
+  const cultura = culturaContent.sections[0];
+  const historia = historiaContent.sections[0];
 
   return (
     <PageFrame
@@ -46,94 +44,95 @@ export default function HomePage() {
       mobileNavItems={mobileNavItems}
       langToggle={{ href: '/en/', label: 'EN' }}
     >
-      {/* A — HERO */}
+      {/* HERO */}
       <Hero
+        eyebrow={homeContent.hero.eyebrow}
         title={homeContent.hero.title}
         subtitle={homeContent.hero.subtitle}
-        location={homeContent.hero.location}
+        location={homeContent.hero.meta}
+        quote={homeContent.hero.quote}
         ctas={heroCtas}
       />
 
-      {/* B — BODEGA EDITORIAL BLOCK */}
-      <section className="mx-auto w-full max-w-[375px] px-4 py-12">
-        <p className="stamp-label mb-3">{bodega.id.replace(/-/g, ' ')}</p>
-        <TextBlock
-          title={bodega.title}
-          paragraphs={bodega.paragraphs}
-          quote={bodega.quote}
-        />
-        {bodega.cta?.href && (
-          <div className="mt-8">
-            <CTAButton href={bodega.cta.href} variant="primary">
-              {bodega.cta.label}
-            </CTAButton>
+      {/* PROPUESTA — CENTERED EDITORIAL */}
+      {propuesta && (
+        <Section id={propuesta.id} title={propuesta.title}>
+          <div className="mx-auto max-w-prose text-center">
+            <TextBlock
+              title={propuesta.title}
+              paragraphs={propuesta.paragraphs}
+              quote={propuesta.quote}
+            />
           </div>
-        )}
-      </section>
+        </Section>
+      )}
 
-      <Divider />
+      {/* PRODUCTO — LISTA */}
+      {producto && (
+        <Section id={producto.id} title={producto.title} label={producto.eyebrow}>
+          <div className="mx-auto max-w-prose space-y-6">
+            <p>{producto.paragraphs?.[0] ?? ''}</p>
+            {producto.points ? (
+              <ul className="space-y-2 list-disc pl-5">
+                {producto.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        </Section>
+      )}
 
-      {/* C — CULTURA DEL IBÉRICO PREVIEW */}
-      <section className="mx-auto w-full max-w-[375px] px-4 py-10">
-        <p className="stamp-label mb-3">Cultura del ibérico</p>
-        <h2 className="font-serif text-2xl font-black text-brand-900 mb-5">
-          {productoSection.title}
-        </h2>
-        <ul className="space-y-3 mb-6">
-          {culturaContent.sections.map((s) => (
-            <li key={s.id} className="flex items-start gap-3 text-sm text-brand-700">
-              <span className="mt-[5px] shrink-0 text-brand-500 text-[10px]">◆</span>
-              <span>{s.title}</span>
-            </li>
-          ))}
-        </ul>
-        {productoSection.cta?.href && (
-          <CTAButton href={productoSection.cta.href} variant="ghost">
-            {productoSection.cta.label}
-          </CTAButton>
-        )}
-      </section>
+      {/* CULTURA DEL IBÉRICO — LISTA + CTA TEXTO */}
+      {cultura && (
+        <Section id="cultura" title={cultura.title}>
+          <div className="mx-auto max-w-prose space-y-6">
+            {cultura.paragraphs ? (
+              <ul className="space-y-2 list-disc pl-5">
+                {cultura.paragraphs.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            ) : null}
+            {cultura.cta?.href ? (
+              <Link href={cultura.cta.href} className="text-sm font-semibold text-brand-700 underline">
+                {cultura.cta.label}
+              </Link>
+            ) : null}
+          </div>
+        </Section>
+      )}
 
-      <Divider />
+      {/* HISTORIA — ENFOQUE EN CITA */}
+      {historia && (
+        <Section id="historia" title={historia.title}>
+          <div className="mx-auto max-w-prose space-y-6">
+            {historia.quote ? (
+              <blockquote className="pull-quote">
+                <p>&ldquo;{historia.quote.text}&rdquo;</p>
+                <cite>— {historia.quote.author}</cite>
+              </blockquote>
+            ) : null}
+            {historia.paragraphs?.[0] ? (
+              <p>{historia.paragraphs[0]}</p>
+            ) : null}
+          </div>
+        </Section>
+      )}
 
-      {/* D — HISTORIA PREVIEW */}
-      <section className="mx-auto w-full max-w-[375px] px-4 py-10">
-        <p className="stamp-label mb-3">Historia</p>
-        <h2 className="font-serif text-2xl font-black text-brand-900 mb-4">
-          {historiaContent.sections[0].title}
-        </h2>
-        <p className="text-sm leading-7 text-brand-700">
-          {historiaContent.sections[0].paragraphs[0]}
-        </p>
-        {historiaContent.sections[0].quote && (
-          <blockquote className="pull-quote mt-5">
-            <p>&ldquo;{historiaContent.sections[0].quote.text}&rdquo;</p>
-            <cite>— {historiaContent.sections[0].quote.author}</cite>
-          </blockquote>
-        )}
-        <div className="mt-8">
-          <CTAButton href={historiaContent.sections[0].cta.href} variant="primary">
-            {historiaContent.sections[0].cta.label}
-          </CTAButton>
+      {/* CONTACTO — LOCALIZACION */}
+      <Section id="contacto" title={contactoContent.sections[0]?.title ?? ''}>
+        <div className="mx-auto max-w-prose space-y-6">
+          <p>{contactoContent.sections[0]?.paragraphs?.[0] ?? ''}</p>
+          <div className="flex flex-col gap-3">
+            {contactoContent.hero.ctas.map((cta) => (
+              <CTAButton key={cta.label} href={cta.href}>
+                {cta.label}
+              </CTAButton>
+            ))}
+          </div>
         </div>
-      </section>
-
-      <Divider />
-
-      {/* E — CONTACTO STRIP */}
-      <section className="mx-auto w-full max-w-[375px] px-4 py-10 bg-brand-100">
-        <p className="stamp-label mb-3">{contactoContent.sections[0].title}</p>
-        <p className="text-[13px] text-brand-700 mb-6 leading-6">
-          {contactoContent.sections[0].paragraphs[0]}
-        </p>
-        <div className="flex flex-col gap-3">
-          {contactoContent.hero.ctas.map((cta) => (
-            <CTAButton key={cta.label} href={cta.href} variant="primary">
-              {cta.label}
-            </CTAButton>
-          ))}
-        </div>
-      </section>
+      </Section>
     </PageFrame>
   );
 }

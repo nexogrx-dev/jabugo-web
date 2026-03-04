@@ -15,7 +15,7 @@ const Divider = () => (
 export function Section({ id, title, label, children, dividerAfter = true }: SectionProps) {
   return (
     <>
-      <section id={id} className="mx-auto w-full max-w-[375px] px-4 py-10">
+      <section id={id} className="mx-auto w-full max-w-prose px-4 py-20 sm:py-28">
         {label && <p className="stamp-label mb-2">{label}</p>}
         {title && (
           <h2 className="font-serif text-2xl font-black text-brand-900 mb-6">{title}</h2>

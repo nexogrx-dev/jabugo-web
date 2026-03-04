@@ -4,9 +4,13 @@
     "description": "Bodega de ibéricos en Calle Sócrates 13, Granada, con enfoque mobile-first y experiencia de producto de alta gama."
   },
   "hero": {
+    "eyebrow": "Bodega · Granada",
     "title": "Jabugo Bodega",
-    "subtitle": "Ibéricos 100% · Cinco Jotas",
-    "location": "Calle Sócrates 13 · Granada",
+    "subtitle": "Ibéricos 100 % · Cinco Jotas",
+    "meta": "Calle Sócrates 13 · Granada",
+    "quote": "El conocimiento del producto es tan importante como el producto mismo.",
+    "cta_primary": "Reservar mesa",
+    "cta_secondary": "Cómo llegar",
     "ctas": [
       { "label": "Reservar mesa", "href": "__WHATSAPP_PLACEHOLDER__" },
       { "label": "Llamar", "href": "__TEL_PLACEHOLDER__" },
@@ -28,31 +32,20 @@
       "image": {
         "src": "hero-jamon.webp",
         "alt": "Ración de jamón ibérico en primer plano"
-      },
-      "cta": {
-        "label": "Reservar mesa",
-        "href": "__WHATSAPP_PLACEHOLDER__"
       }
     },
     {
       "id": "producto",
-      "title": "Cinco Jotas y corte a cuchillo",
+      "eyebrow": "El producto",
+      "title": "Cinco Jotas · Jamón ibérico de bellota",
       "paragraphs": [
-        "El protagonista es el jamón de bellota 100% ibérico Cinco Jotas, servido con corte a cuchillo.",
-        "La oferta es deliberadamente restrictiva para garantizar una calidad superlativa en cada servicio."
+        "Piezas seleccionadas de cerdo ibérico 100 %, criados en montanera y curados entre 36 y 48 meses."
       ],
-      "quote": {
-        "text": "La web debe invitar al cliente a una experiencia de ibéricos con identidad propia.",
-        "author": "Nicolás"
-      },
-      "image": {
-        "src": "corte-cuchillo.webp",
-        "alt": "Servicio de jamón ibérico cortado a cuchillo"
-      },
-      "cta": {
-        "label": "Ver cultura del ibérico",
-        "href": "/cultura-iberico"
-      }
+      "points": [
+        "Raza ibérica seleccionada",
+        "Alimentación natural en dehesa",
+        "Corte a cuchillo en el momento"
+      ]
     }
   ]
 }
