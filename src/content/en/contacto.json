@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Contact | Jabugo Bodega",
+    "description": "Contact and location for Jabugo Bodega in Granada, with fast mobile actions for booking, calling, and maps."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "100% Iberian · Cinco Jotas",
+    "location": "Calle Socrates 13 · Granada",
+    "ctas": [
+      { "label": "Book a table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Call", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "How to get here", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "ubicacion",
+      "title": "Where we are",
+      "paragraphs": [
+        "Jabugo Bodega is located at Calle Socrates 13, 18002 Granada, in Barrio de Ronda.",
+        "On mobile, priority is to resolve location, booking, and call actions quickly."
+      ],
+      "quote": {
+        "text": "Local conversion improves when arriving and booking are solved in just a few taps.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "fachada-socrates.webp",
+        "alt": "Jabugo Bodega facade on Calle Socrates"
+      },
+      "cta": {
+        "label": "How to get here",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "gestion-local",
+      "title": "Synchronized information",
+      "paragraphs": [
+        "The research highlights web and Google Business Profile data sync as a key factor.",
+        "It also recommends replying to reviews to strengthen local visibility in Google Maps."
+      ],
+      "quote": {
+        "text": "Proximity traffic is the most valuable for a bodega of this scale.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "acceso-barrio-ronda.webp",
+        "alt": "Access area in Barrio de Ronda"
+      },
+      "cta": {
+        "label": "Book a table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "History | Jabugo Bodega",
+    "description": "Editorial story of Jabugo Bodega in Granada: traditional abaceria philosophy, human scale, and personalized hospitality."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "100% Iberian · Cinco Jotas",
+    "location": "Calle Socrates 13 · Granada",
+    "ctas": [
+      { "label": "Book a table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Call", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "How to get here", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "filosofia",
+      "title": "Abaceria philosophy",
+      "paragraphs": [
+        "Jabugo Bodega, led by Nicolás and his wife, brings traditional abaceria philosophy into central Granada.",
+        "Here, Iberian product knowledge and service standards are treated as one."
+      ],
+      "quote": {
+        "text": "The project narrative should feel like an invitation into an Iberian house.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "bodega-interior.webp",
+        "alt": "Bodega interior with a warm atmosphere"
+      },
+      "cta": {
+        "label": "Book a table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "anfitrion",
+      "title": "The host’s role",
+      "paragraphs": [
+        "Nicolás appears in the research as an exceptional and professional host.",
+        "Customers and critics point to personalized service as a key pillar of the venue’s success."
+      ],
+      "quote": {
+        "text": "The website should not sound corporate, but close and personal.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "nicolas-sala.webp",
+        "alt": "Nicolás in the dining space"
+      },
+      "cta": {
+        "label": "How to get here",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

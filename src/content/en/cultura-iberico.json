@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Iberian Culture | Jabugo Bodega",
+    "description": "Educational content on Iberian breed, montanera, curing, and hand slicing based on Jabugo Bodega research."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "100% Iberian · Cinco Jotas",
+    "location": "Calle Socrates 13 · Granada",
+    "ctas": [
+      { "label": "Book a table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Call", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "How to get here", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "raza-y-montanera",
+      "title": "Iberian breed and montanera",
+      "paragraphs": [
+        "100% Iberian acorn-fed ham comes from animals with full Iberian lineage.",
+        "During montanera, free-range acorn feeding provides aromatic notes and high-quality fat."
+      ],
+      "quote": {
+        "text": "Iberian culture explains why this product carries this level of value.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "dehesa-montanera.webp",
+        "alt": "Dehesa landscape during montanera"
+      },
+      "cta": {
+        "label": "Book a table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "curacion-y-corte",
+      "title": "Curing and hand slicing",
+      "paragraphs": [
+        "In premium pieces, curing in natural bodegas ranges between 36 and 48 months.",
+        "Hand slicing into thin cuts supports aromatic expression and texture on the palate."
+      ],
+      "quote": {
+        "text": "Hand slicing is an essential part of the gastronomic experience.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "curacion-bodega.webp",
+        "alt": "Pieces in natural bodega curing process"
+      },
+      "cta": {
+        "label": "How to get here",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

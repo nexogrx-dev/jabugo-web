@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Jabugo Bodega | Iberian Products in Granada",
+    "description": "An Iberian-focused bodega on Calle Socrates 13, Granada, with a mobile-first approach and premium product experience."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "100% Iberian · Cinco Jotas",
+    "location": "Calle Socrates 13 · Granada",
+    "ctas": [
+      { "label": "Book a table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Call", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "How to get here", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "propuesta",
+      "title": "An Iberian-specialist bodega",
+      "paragraphs": [
+        "Jabugo Bodega is located in Barrio de Ronda and stands apart from the mass tapas model with a niche proposal.",
+        "Its human scale and intimate atmosphere support an experience focused on quality, exclusivity, and close service."
+      ],
+      "quote": {
+        "text": "Knowledge of the product is as important as the product itself.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "hero-jamon.webp",
+        "alt": "Close-up of Iberian ham serving"
+      },
+      "cta": {
+        "label": "Book a table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "producto",
+      "title": "Cinco Jotas and hand slicing",
+      "paragraphs": [
+        "The leading product is 100% Iberian acorn-fed Cinco Jotas ham, served hand-sliced.",
+        "The offering is deliberately focused to guarantee exceptional quality in every service."
+      ],
+      "quote": {
+        "text": "The website should invite guests to an Iberian experience with its own identity.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "corte-cuchillo.webp",
+        "alt": "Hand-sliced Iberian ham service"
+      },
+      "cta": {
+        "label": "See Iberian culture",
+        "href": "/cultura-del-iberico"
+      }
+    }
+  ]
+}
