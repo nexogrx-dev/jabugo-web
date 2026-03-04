@@ -4,19 +4,26 @@ import { ImageBlock } from '@/components/ImageBlock';
 import { PageFrame } from '@/components/PageFrame';
 import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
-import { esContent } from '@/content/es/site';
-import historiaContent from '@/src/content/es/historia.json';
+import { enContent } from '@/content/en/site';
+import historiaContent from '@/src/content/fr/historia.json';
 import { buildPageMetadata } from '@/src/lib/seo';
+
+const frNav = [
+  { href: '/fr/', label: enContent.nav[0].label },
+  { href: '/fr/historia/', label: enContent.nav[2].label },
+  { href: '/fr/culture-of-iberico/', label: enContent.nav[3].label },
+  { href: '/fr/contact/', label: enContent.nav[4].label },
+] as const;
 
 export const metadata: Metadata = buildPageMetadata({
   title: historiaContent.meta.title,
   description: historiaContent.meta.description,
-  url: '/historia/',
+  url: '/fr/historia/',
 });
 
-export default function HistoriaPage() {
+export default function HistoriaFrPage() {
   return (
-    <PageFrame navItems={esContent.nav} langToggle={{ href: '/en/historia/', label: 'EN' }}>
+    <PageFrame navItems={frNav} langToggle={{ href: '/historia/', label: 'ES' }}>
       {historiaContent.sections.map((section) => (
         <Section key={section.id} id={section.id} title={section.title}>
           <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2">

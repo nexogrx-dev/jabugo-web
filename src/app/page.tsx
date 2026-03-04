@@ -7,8 +7,6 @@ import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
 import { esContent } from '@/content/es/site';
 import homeContent from '@/src/content/es/home.json';
-import historiaContent from '@/src/content/es/historia.json';
-import culturaContent from '@/src/content/es/cultura-iberico.json';
 import contactoContent from '@/src/content/es/contacto.json';
 import { buildPageMetadata } from '@/src/lib/seo';
 
@@ -41,8 +39,8 @@ export default function HomePage() {
         ctas={homeContent.hero.ctas}
       />
 
-      {/* SECTION 2 — HISTORIA */}
-      {historiaContent.sections.map((section) => (
+      {/* SECTION 2 — CONTENIDO HOME */}
+      {homeContent.sections.map((section) => (
         <Section key={section.id} id={section.id} title={section.title}>
           <div className="flex flex-col gap-6">
             <TextBlock
@@ -50,29 +48,15 @@ export default function HomePage() {
               paragraphs={section.paragraphs}
               quote={section.quote}
             />
-            <ImageBlock
-              src={`/images/${section.image.src}`}
-              alt={section.image.alt}
-            />
-            <CTAButton href={section.cta.href}>{section.cta.label}</CTAButton>
-          </div>
-        </Section>
-      ))}
-
-      {/* SECTION 3 — CULTURA DEL IBÉRICO */}
-      {culturaContent.sections.map((section) => (
-        <Section key={section.id} id={section.id} title={section.title}>
-          <div className="flex flex-col gap-6">
-            <TextBlock
-              title={section.title}
-              paragraphs={section.paragraphs}
-              quote={section.quote}
-            />
-            <ImageBlock
-              src={`/images/${section.image.src}`}
-              alt={section.image.alt}
-            />
-            <CTAButton href={section.cta.href}>{section.cta.label}</CTAButton>
+            {section.image?.src ? (
+              <ImageBlock
+                src={`/images/${section.image.src}`}
+                alt={section.image.alt}
+              />
+            ) : null}
+            {section.cta?.href ? (
+              <CTAButton href={section.cta.href}>{section.cta.label}</CTAButton>
+            ) : null}
           </div>
         </Section>
       ))}

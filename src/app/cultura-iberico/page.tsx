@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { CTAButton } from '@/components/CTAButton';
+import { ImageBlock } from '@/components/ImageBlock';
 import { PageFrame } from '@/components/PageFrame';
 import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
@@ -15,9 +17,23 @@ export const metadata: Metadata = buildPageMetadata({
 export default function CulturaPage() {
   return (
     <PageFrame navItems={esContent.nav} langToggle={{ href: '/en/culture-of-iberico/', label: 'EN' }}>
-      <Section title={esContent.cultura.title}>
-        <TextBlock title="Contenido editorial" body={esContent.cultura.body} />
-      </Section>
+      {culturaIbericoContent.sections.map((section) => (
+        <Section key={section.id} id={section.id} title={section.title}>
+          <div className="flex flex-col gap-6">
+            <TextBlock
+              title={section.title}
+              paragraphs={section.paragraphs}
+              quote={section.quote}
+            />
+            {section.image?.src ? (
+              <ImageBlock src={`/images/${section.image.src}`} alt={section.image.alt} />
+            ) : null}
+            {section.cta?.href ? (
+              <CTAButton href={section.cta.href}>{section.cta.label}</CTAButton>
+            ) : null}
+          </div>
+        </Section>
+      ))}
     </PageFrame>
   );
 }
