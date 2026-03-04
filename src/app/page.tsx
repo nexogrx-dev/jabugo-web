@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
 import { ImageBlock } from '@/components/ImageBlock';
 import { CTAButton } from '@/components/CTAButton';
@@ -9,6 +10,13 @@ import homeContent from '@/src/content/es/home.json';
 import historiaContent from '@/src/content/es/historia.json';
 import culturaContent from '@/src/content/es/cultura-iberico.json';
 import contactoContent from '@/src/content/es/contacto.json';
+import { buildPageMetadata } from '@/src/lib/seo';
+
+export const metadata: Metadata = buildPageMetadata({
+  title: homeContent.meta.title,
+  description: homeContent.meta.description,
+  url: '/',
+});
 
 const mobileNavItems = [
   { href: '/', label: 'Inicio' },

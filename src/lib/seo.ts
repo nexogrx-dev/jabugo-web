@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 
+export function getSiteUrl() {
+  return process.env.NEXT_PUBLIC_SITE_URL || 'https://jabugo-web.pages.dev';
+}
+
 export function buildPageMetadata({
   title,
   description,
@@ -37,23 +41,31 @@ export function buildPageMetadata({
   };
 }
 
-export function getRestaurantJsonLd(baseUrl: string) {
+export function getLocalBusinessJsonLd(baseUrl: string) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Restaurant',
+    '@type': 'LocalBusiness',
     name: 'Jabugo Bodega',
     url: baseUrl,
     image: `${baseUrl}/images/hero/og-placeholder.jpg`,
-    telephone: 'PENDING',
-    servesCuisine: 'Iberico',
+    description:
+      'Bodega especializada en ibericos de alta gama en Calle Socrates 13, Granada.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'PENDING',
-      addressLocality: 'PENDING',
-      postalCode: 'PENDING',
+      streetAddress: 'Calle Socrates 13',
+      addressLocality: 'Granada',
+      postalCode: '18002',
       addressCountry: 'ES',
     },
-    openingHours: 'PENDING',
-    priceRange: 'PENDING',
+  };
+}
+
+export function getWebSiteJsonLd(baseUrl: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Jabugo Bodega',
+    url: baseUrl,
+    inLanguage: 'es-ES',
   };
 }

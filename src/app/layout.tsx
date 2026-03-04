@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { esContent } from '@/content/es/site';
-import { getRestaurantJsonLd } from '@/src/lib/seo';
+import { getLocalBusinessJsonLd, getSiteUrl, getWebSiteJsonLd } from '@/src/lib/seo';
 import '@/styles/globals.css';
 
+const siteUrl = getSiteUrl();
+
 export const metadata: Metadata = {
-  metadataBase: new URL(esContent.baseUrl),
+  metadataBase: new URL(siteUrl),
   title: esContent.defaultTitle,
   description: esContent.defaultDescription,
   openGraph: {
@@ -31,10 +33,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es">
       <body>
         <Script
-          id="jsonld-restaurant"
+          id="jsonld-localbusiness"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getRestaurantJsonLd(esContent.baseUrl)),
+            __html: JSON.stringify(getLocalBusinessJsonLd(siteUrl)),
+          }}
+        />
+        <Script
+          id="jsonld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebSiteJsonLd(siteUrl)),
           }}
         />
         {children}

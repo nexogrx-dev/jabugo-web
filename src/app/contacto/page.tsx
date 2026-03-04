@@ -3,11 +3,12 @@ import { PageFrame } from '@/components/PageFrame';
 import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
 import { esContent } from '@/content/es/site';
+import contactoContent from '@/src/content/es/contacto.json';
 import { buildPageMetadata } from '@/src/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: `Contacto | ${esContent.siteName}`,
-  description: esContent.contacto.body,
+  title: contactoContent.meta.title,
+  description: contactoContent.meta.description,
   url: '/contacto/',
 });
 

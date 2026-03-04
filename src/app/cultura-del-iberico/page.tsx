@@ -3,11 +3,12 @@ import { PageFrame } from '@/components/PageFrame';
 import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
 import { esContent } from '@/content/es/site';
+import culturaIbericoContent from '@/src/content/es/cultura-iberico.json';
 import { buildPageMetadata } from '@/src/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: `Cultura del iberico | ${esContent.siteName}`,
-  description: esContent.cultura.body,
+  title: culturaIbericoContent.meta.title,
+  description: culturaIbericoContent.meta.description,
   url: '/cultura-del-iberico/',
 });
 

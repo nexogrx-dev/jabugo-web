@@ -4,11 +4,12 @@ import { PageFrame } from '@/components/PageFrame';
 import { Section } from '@/components/Section';
 import { TextBlock } from '@/components/TextBlock';
 import { esContent } from '@/content/es/site';
+import historiaContent from '@/src/content/es/historia.json';
 import { buildPageMetadata } from '@/src/lib/seo';
 
 export const metadata: Metadata = buildPageMetadata({
-  title: `Historia | ${esContent.siteName}`,
-  description: esContent.historia.body,
+  title: historiaContent.meta.title,
+  description: historiaContent.meta.description,
   url: '/historia/',
 });
 
