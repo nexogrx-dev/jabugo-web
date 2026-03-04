@@ -4,12 +4,58 @@
 
 :root {
   color-scheme: light;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+  --color-ink: #1c100c;
+  --color-paper: #faf7f3;
+  --color-parchment: #ede5d8;
+  --color-clay: #7a3d24;
+  --color-ember: #b84d1a;
+  --color-smoke: #6b5248;
+  --color-bone: #d4c4b0;
 }
 
 body {
   @apply bg-brand-50 text-brand-900 antialiased;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 a {
   @apply transition-colors;
+}
+
+/* ─── Typographic scale ─── */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Bodega divider — the signature ◆ motif ─── */
+@layer components {
+  .bodega-divider {
+    @apply flex items-center gap-3 text-brand-200 my-8 px-4;
+  }
+  .bodega-divider::before,
+  .bodega-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-current;
+  }
+
+  /* Stamp label — overline style for page/section labels */
+  .stamp-label {
+    @apply text-[11px] font-bold uppercase tracking-[0.28em] text-brand-500;
+  }
+
+  /* Pull quote — editorial left-border style */
+  .pull-quote {
+    @apply border-l-2 border-brand-600 pl-4 py-1 my-4;
+  }
+  .pull-quote p {
+    @apply text-sm italic text-brand-700 leading-6;
+  }
+  .pull-quote cite {
+    @apply block mt-1 text-[11px] not-italic tracking-[0.15em] uppercase text-brand-500;
+  }
 }
