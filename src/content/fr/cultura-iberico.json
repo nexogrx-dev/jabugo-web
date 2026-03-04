@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Culture ibérique | Jabugo Bodega",
+    "description": "Contenu éducatif sur la race ibérique, la montanera, l'affinage et la coupe au couteau, selon la recherche sur Jabugo Bodega."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibériques 100% · Cinco Jotas",
+    "location": "Calle Socrates 13 · Grenade",
+    "ctas": [
+      { "label": "Réserver une table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Appeler", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Comment venir", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "raza-y-montanera",
+      "title": "Race ibérique et montanera",
+      "paragraphs": [
+        "Le jambon de bellota 100% ibérique provient d'animaux de pureté raciale complète.",
+        "Pendant la montanera, l'alimentation au gland en liberté apporte des nuances aromatiques et des graisses de qualité."
+      ],
+      "quote": {
+        "text": "La culture ibérique aide à comprendre pourquoi ce produit a cette valeur.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "dehesa-montanera.webp",
+        "alt": "Environnement de dehesa pendant la montanera"
+      },
+      "cta": {
+        "label": "Réserver une table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "curacion-y-corte",
+      "title": "Affinage et coupe au couteau",
+      "paragraphs": [
+        "L'affinage en bodegas naturelles se situe entre 36 et 48 mois pour les pièces premium.",
+        "La coupe au couteau en tranches fines favorise la libération aromatique et la texture en bouche."
+      ],
+      "quote": {
+        "text": "La coupe au couteau est une part essentielle de l'expérience gastronomique.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "curacion-bodega.webp",
+        "alt": "Pièces en cours d'affinage dans une bodega naturelle"
+      },
+      "cta": {
+        "label": "Comment venir",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

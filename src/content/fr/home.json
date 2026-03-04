@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Jabugo Bodega | Produits ibériques à Grenade",
+    "description": "Bodega de produits ibériques au Calle Socrates 13, Grenade, avec une approche mobile-first et une expérience produit haut de gamme."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibériques 100% · Cinco Jotas",
+    "location": "Calle Socrates 13 · Grenade",
+    "ctas": [
+      { "label": "Réserver une table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Appeler", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Comment venir", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "propuesta",
+      "title": "Une bodega spécialisée en ibérique",
+      "paragraphs": [
+        "Jabugo Bodega se trouve dans le Barrio de Ronda et se distingue du modèle de tapas de masse avec une proposition de niche.",
+        "Son échelle humaine et son ambiance intime soutiennent une expérience centrée sur la qualité, l'exclusivité et un service proche."
+      ],
+      "quote": {
+        "text": "La connaissance du produit est aussi importante que le produit lui-même.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "hero-jamon.webp",
+        "alt": "Portion de jambon ibérique en gros plan"
+      },
+      "cta": {
+        "label": "Réserver une table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "producto",
+      "title": "Cinco Jotas et coupe au couteau",
+      "paragraphs": [
+        "Le produit phare est le jambon de bellota 100% ibérique Cinco Jotas, servi en coupe au couteau.",
+        "L'offre est volontairement ciblée afin de garantir une qualité exceptionnelle à chaque service."
+      ],
+      "quote": {
+        "text": "Le site doit inviter le client à une expérience ibérique avec sa propre identité.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "corte-cuchillo.webp",
+        "alt": "Service de jambon ibérique coupé au couteau"
+      },
+      "cta": {
+        "label": "Voir la culture ibérique",
+        "href": "/cultura-del-iberico"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Histoire | Jabugo Bodega",
+    "description": "Histoire éditoriale de Jabugo Bodega à Grenade : philosophie d'abaceria, échelle humaine et hospitalité personnalisée."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibériques 100% · Cinco Jotas",
+    "location": "Calle Socrates 13 · Grenade",
+    "ctas": [
+      { "label": "Réserver une table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Appeler", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Comment venir", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "filosofia",
+      "title": "Philosophie d'abaceria",
+      "paragraphs": [
+        "Jabugo Bodega, dirigée par Nicolás et son épouse, transpose la philosophie de l'abaceria traditionnelle au centre urbain de Grenade.",
+        "Dans cette maison, la connaissance de l'ibérique et l'art du service ne font qu'un."
+      ],
+      "quote": {
+        "text": "Le récit du projet doit se ressentir comme une invitation dans une maison d'ibériques.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "bodega-interior.webp",
+        "alt": "Intérieur de bodega avec ambiance chaleureuse"
+      },
+      "cta": {
+        "label": "Réserver une table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "anfitrion",
+      "title": "Le rôle de l'hôte",
+      "paragraphs": [
+        "Nicolás apparaît dans la recherche comme un hôte exceptionnel et professionnel.",
+        "Clients et critique soulignent l'attention personnalisée comme pilier du succès de l'établissement."
+      ],
+      "quote": {
+        "text": "Le site ne doit pas sonner corporate, mais proche et personnel.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "nicolas-sala.webp",
+        "alt": "Nicolás dans l'espace de salle"
+      },
+      "cta": {
+        "label": "Comment venir",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    }
+  ]
+}

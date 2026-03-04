@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "title": "Contact | Jabugo Bodega",
+    "description": "Contact et localisation de Jabugo Bodega à Grenade, avec actions rapides de réservation, appel et carte sur mobile."
+  },
+  "hero": {
+    "title": "Jabugo Bodega",
+    "subtitle": "Ibériques 100% · Cinco Jotas",
+    "location": "Calle Socrates 13 · Grenade",
+    "ctas": [
+      { "label": "Réserver une table", "href": "__WHATSAPP_PLACEHOLDER__" },
+      { "label": "Appeler", "href": "__TEL_PLACEHOLDER__" },
+      { "label": "Comment venir", "href": "__MAPS_PLACEHOLDER__" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "ubicacion",
+      "title": "Où nous trouver",
+      "paragraphs": [
+        "Jabugo Bodega se trouve au Calle Socrates 13, 18002 Grenade, dans le Barrio de Ronda.",
+        "Sur mobile, la priorité est de résoudre rapidement localisation, réservation et appel."
+      ],
+      "quote": {
+        "text": "La conversion locale s'améliore quand venir et réserver se résolvent en quelques touches.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "fachada-socrates.webp",
+        "alt": "Façade de Jabugo Bodega sur Calle Socrates"
+      },
+      "cta": {
+        "label": "Comment venir",
+        "href": "__MAPS_PLACEHOLDER__"
+      }
+    },
+    {
+      "id": "gestion-local",
+      "title": "Information synchronisée",
+      "paragraphs": [
+        "La recherche souligne comme clé le maintien des données synchronisées entre le site et Google Business Profile.",
+        "Elle recommande aussi de répondre aux avis pour renforcer la visibilité locale sur Google Maps."
+      ],
+      "quote": {
+        "text": "Le trafic de proximité est le plus précieux pour une bodega de ce format.",
+        "author": "Nicolás"
+      },
+      "image": {
+        "src": "acceso-barrio-ronda.webp",
+        "alt": "Environnement d'accès dans le Barrio de Ronda"
+      },
+      "cta": {
+        "label": "Réserver une table",
+        "href": "__WHATSAPP_PLACEHOLDER__"
+      }
+    }
+  ]
+}
