@@ -125,11 +125,19 @@ export default function HomePage() {
         <div className="mx-auto max-w-prose space-y-6">
           <p>{contactoContent.sections[0]?.paragraphs?.[0] ?? ''}</p>
           <div className="flex flex-col gap-3">
-            {contactoContent.hero.ctas.map((cta) => (
-              <CTAButton key={cta.label} href={cta.href}>
-                {cta.label}
-              </CTAButton>
-            ))}
+            {contactoContent.hero.ctas.map((cta) => {
+              const variant =
+                cta.label === 'Cómo llegar' ? 'primary' :
+                cta.label === 'Reservar mesa' ? 'ghost' :
+                cta.label === 'Llamar' ? 'text' :
+                'ghost';
+
+              return (
+                <CTAButton key={cta.label} href={cta.href} variant={variant}>
+                  {cta.label}
+                </CTAButton>
+              );
+            })}
           </div>
         </div>
       </Section>

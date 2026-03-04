@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
 /* ─── Bodega divider — the signature ◆ motif ─── */
 @layer components {
   .bodega-divider {
-    @apply flex items-center gap-3 text-brand-200 my-8 px-4;
+    @apply mx-auto w-full max-w-[240px] sm:max-w-[520px] flex items-center gap-3 text-brand-200/50 my-10;
   }
   .bodega-divider::before,
   .bodega-divider::after {
