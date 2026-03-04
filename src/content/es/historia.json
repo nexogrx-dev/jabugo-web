@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Historia | Jabugo Bodega",
-    "description": "Origen y filosofía de Jabugo Bodega: hospitalidad tradicional, escala humana y trato personal en Granada."
+    "description": "Historia editorial de Jabugo Bodega en Granada: filosofía de abacería, escala humana y hospitalidad personalizada."
   },
   "hero": {
     "title": "Jabugo Bodega",
@@ -18,11 +18,11 @@
       "id": "filosofia",
       "title": "Filosofía de abacería",
       "paragraphs": [
-        "La casa se apoya en una lógica tradicional: producto, criterio y atención directa.",
-        "La narrativa digital debe sentirse cercana, como una invitación personal y no corporativa."
+        "Jabugo Bodega, dirigida por Nicolás y su esposa, traslada la filosofía de la abacería tradicional al centro urbano de Granada.",
+        "En esta casa, saber de ibérico y saber servir forman una sola cosa."
       ],
       "quote": {
-        "text": "La relación con cada mesa es parte de la experiencia.",
+        "text": "La narrativa del proyecto debe sentirse como una invitación a una casa de ibéricos.",
         "author": "Nicolás"
       },
       "image": {
@@ -38,11 +38,11 @@
       "id": "anfitrion",
       "title": "El papel del anfitrión",
       "paragraphs": [
-        "Nicolás es una figura central en la identidad del negocio y en la confianza del cliente.",
-        "El trato personalizado se reconoce como uno de los pilares del proyecto."
+        "Nicolás aparece en la investigación como anfitrión excepcional y profesional.",
+        "Clientes y crítica señalan el trato personalizado como pilar del éxito del local."
       ],
       "quote": {
-        "text": "La hospitalidad empieza antes de sentarse a la mesa.",
+        "text": "La web no debe sonar corporativa, sino cercana y personal.",
         "author": "Nicolás"
       },
       "image": {

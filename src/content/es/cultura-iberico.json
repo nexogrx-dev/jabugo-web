@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Cultura del Ibérico | Jabugo Bodega",
-    "description": "Guía breve sobre raza ibérica, montanera, curación y corte a cuchillo para comprender el valor del producto."
+    "description": "Contenido educativo sobre raza ibérica, montanera, curación y corte a cuchillo según la investigación de Jabugo Bodega."
   },
   "hero": {
     "title": "Jabugo Bodega",
@@ -19,10 +19,10 @@
       "title": "Raza ibérica y montanera",
       "paragraphs": [
         "El jamón de bellota 100% ibérico procede de animales de pureza racial completa.",
-        "La montanera, con alimentación en bellota y libertad en dehesa, define su perfil aromático y graso."
+        "Durante la montanera, la alimentación con bellota en libertad aporta matices aromáticos y grasas de calidad."
       ],
       "quote": {
-        "text": "Para entender el sabor hay que entender el origen.",
+        "text": "La cultura ibérica ayuda a entender por qué este producto tiene ese valor.",
         "author": "Nicolás"
       },
       "image": {
@@ -38,11 +38,11 @@
       "id": "curacion-y-corte",
       "title": "Curación y corte a cuchillo",
       "paragraphs": [
-        "La curación en bodegas naturales se prolonga en piezas premium entre 36 y 48 meses.",
-        "El corte a cuchillo en lonchas finas favorece la expresión aromática frente al corte mecánico."
+        "La curación en bodegas naturales se sitúa entre 36 y 48 meses en piezas premium.",
+        "El corte a cuchillo en lonchas finas favorece la liberación aromática y la textura en boca."
       ],
       "quote": {
-        "text": "El corte forma parte del producto, no solo del servicio.",
+        "text": "El corte a cuchillo es parte esencial de la experiencia gastronómica.",
         "author": "Nicolás"
       },
       "image": {

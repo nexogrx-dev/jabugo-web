@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Jabugo Bodega | Ibéricos en Granada",
-    "description": "Bodega especializada en ibéricos en Calle Sócrates 13, Granada. Propuesta de producto y hospitalidad en formato mobile-first."
+    "description": "Bodega de ibéricos en Calle Sócrates 13, Granada, con enfoque mobile-first y experiencia de producto de alta gama."
   },
   "hero": {
     "title": "Jabugo Bodega",
@@ -18,11 +18,11 @@
       "id": "propuesta",
       "title": "Una bodega de especialización ibérica",
       "paragraphs": [
-        "Jabugo Bodega se posiciona en Granada como un espacio centrado en producto ibérico de alta gama.",
-        "Su escala es íntima y el servicio prioriza una experiencia cuidada frente al formato masivo."
+        "Jabugo Bodega se ubica en el Barrio de Ronda y se desmarca del modelo de tapa masiva con una propuesta de nicho.",
+        "Su escala humana y su ambiente íntimo sostienen una experiencia centrada en calidad, exclusividad y trato cercano."
       ],
       "quote": {
-        "text": "Aquí el conocimiento del producto es tan importante como el producto.",
+        "text": "El conocimiento del producto es tan importante como el producto mismo.",
         "author": "Nicolás"
       },
       "image": {
@@ -38,11 +38,11 @@
       "id": "producto",
       "title": "Cinco Jotas y corte a cuchillo",
       "paragraphs": [
-        "El eje de la propuesta es el jamón de bellota 100% ibérico Cinco Jotas.",
-        "El corte a cuchillo en lonchas finas forma parte esencial de la experiencia en sala."
+        "El protagonista es el jamón de bellota 100% ibérico Cinco Jotas, servido con corte a cuchillo.",
+        "La oferta es deliberadamente restrictiva para garantizar una calidad superlativa en cada servicio."
       ],
       "quote": {
-        "text": "Cada detalle del servicio debe respetar el producto.",
+        "text": "La web debe invitar al cliente a una experiencia de ibéricos con identidad propia.",
         "author": "Nicolás"
       },
       "image": {

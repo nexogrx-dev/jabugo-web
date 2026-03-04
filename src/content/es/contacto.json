@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contacto | Jabugo Bodega",
-    "description": "Ubicación de Jabugo Bodega en Granada y accesos rápidos para reservar, llamar y llegar desde móvil."
+    "description": "Contacto y ubicación de Jabugo Bodega en Granada, con acciones rápidas de reserva, llamada y mapa para móvil."
   },
   "hero": {
     "title": "Jabugo Bodega",
@@ -18,11 +18,11 @@
       "id": "ubicacion",
       "title": "Dónde estamos",
       "paragraphs": [
-        "Jabugo Bodega está en Calle Sócrates 13, en el Barrio de Ronda de Granada.",
-        "La página de contacto debe resolver de forma inmediata cómo llegar y cómo reservar."
+        "Jabugo Bodega está en Calle Sócrates 13, 18002 Granada, en el Barrio de Ronda.",
+        "Para móvil, la prioridad es resolver rápido ubicación, reserva y llamada."
       ],
       "quote": {
-        "text": "La experiencia empieza cuando el cliente encuentra el lugar sin fricción.",
+        "text": "La conversión local mejora cuando llegar y reservar se resuelve en pocos toques.",
         "author": "Nicolás"
       },
       "image": {
@@ -38,11 +38,11 @@
       "id": "gestion-local",
       "title": "Información sincronizada",
       "paragraphs": [
-        "Los datos del sitio deben estar alineados con Google Business Profile para mejorar visibilidad local.",
-        "Las acciones clave en móvil son reservar, llamar y abrir mapa con un solo toque."
+        "La investigación marca como clave mantener web y Google Business Profile con datos sincronizados.",
+        "También recomienda responder reseñas para reforzar visibilidad local en Google Maps."
       ],
       "quote": {
-        "text": "Menos pasos, mejor servicio.",
+        "text": "El tráfico de proximidad es el más valioso para una bodega de este formato.",
         "author": "Nicolás"
       },
       "image": {
